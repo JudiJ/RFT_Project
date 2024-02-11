@@ -12,7 +12,6 @@ public class CanvasManager : MonoBehaviour
     void Start()
     {
         Button btn = Startbutton.GetComponent<Button>();
-        //btn.onClick.AddListener(TaskOnClick);
     }
     
     public void TaskOnClick()
