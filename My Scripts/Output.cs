@@ -84,7 +84,6 @@ public class Output:MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             counter--;
-            // Save();
         }
         if (Trigger_R.GetStateDown(SteamVR_Input_Sources.Any))
         {
@@ -141,7 +140,6 @@ public class Output:MonoBehaviour
     string GetPath()
     {
 #if UNITY_EDITOR
-      //  return Application.dataPath + "/CSV_RFT/"  + DateTime.Now.ToLongDateString() + "_" + InputField.text.ToString() + ".csv";
         return "C:/Users/Josupeit/Desktop/CSV_RFT/" + DateTime.Now.ToLongDateString() + "_" + Name + "_" + InputField.text.ToString() + ".csv";
 #else
        return Application.dataPath + "/"  + DateTime.Now.ToLongDateString() + "_" + Name + "_" + InputField.text.ToString() + ".csv";
