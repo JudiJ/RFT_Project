@@ -97,16 +97,16 @@ public class Output:MonoBehaviour
             rowDataTemp[0] = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:fffff");//Time
             rowDataTemp[1] = counter.ToString(); //Trialnumber
             rowDataTemp[2] = counter2.ToString(); //Trialnumber
-            rowDataTemp[3] = Frame.transform.eulerAngles.z.ToString();//z Tilt Frame
-            rowDataTemp[4] = Rod.transform.eulerAngles.z.ToString();//z Tilt Rod
+            rowDataTemp[3] = Frame.transform.eulerAngles.z.ToString();//z Rotation Frame
+            rowDataTemp[4] = Rod.transform.eulerAngles.z.ToString();//z Rotation Rod
             rowDataTemp[5] = m_TurnValue.axis.x.ToString();//Movement x Axis
             rowDataTemp[6] = m_TurnValue.axis.y.ToString();//Movement y Axis
             rowDataTemp[7] = Camera.transform.localPosition.x.ToString();//x Position Head
             rowDataTemp[8] = Camera.transform.localPosition.y.ToString();//y Position Head
             rowDataTemp[9] = Camera.transform.localPosition.z.ToString();//z Position Head
-            rowDataTemp[10] = Camera.transform.eulerAngles.x.ToString();//x Tilt Head
-            rowDataTemp[11] = Camera.transform.eulerAngles.y.ToString();//y Tilt Head
-            rowDataTemp[12] = Camera.transform.eulerAngles.z.ToString();//z Tilt Head
+            rowDataTemp[10] = Camera.transform.eulerAngles.x.ToString();//x Rotation Head
+            rowDataTemp[11] = Camera.transform.eulerAngles.y.ToString();//y Rotation Head
+            rowDataTemp[12] = Camera.transform.eulerAngles.z.ToString();//z Rotation Head
 
 
         rowData.Add(rowDataTemp);
