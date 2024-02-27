@@ -1,12 +1,12 @@
 # Readme RFT_Project
 
 This project contains the programming scripts and assets for a virtual rod and frame test (RFT). 
-It was developed for the 2022/23 experiment "Replication of Field-Dependency and Cybersickness" by J. Josupeit, L. Greim, and S. Sanchez Rivas.
+It was developed for the 2023/24 study "In Rod we Trust. The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
 
 ## Description of the Application
 In a dark room, participants will see a rectangular frame and a cuboid rod with round dots at both ends. 
-At the start of each trial, the rod and frame are rotated on their z-axis (global Unity coordinates) in fixed degrees (frame 33, 0, and -33, rod 22, 11, -11, and -22). 
-The task for the virtual RFT is to orientate the rod to verticality, while ignoring the rotation of the frame. 
+At the start of each trial, the rod and frame are rotated around their z-axis (global Unity coordinates) in fixed degrees (frame 33, 0, and -33, rod 22, 11, -11, and -22). 
+The task for the virtual RFT is to orientate the rod to verticality, 0 degrees rotation, while ignoring the rotation of the frame. 
 To rotate the rod left and right, the participant can press the thumb on the left or right side on the controller trackpad. 
 When the input is confirmed, the next trial can be started by pulling the trigger at the back of the controller.
 
@@ -17,7 +17,7 @@ Pressing “Enter” on the numbpad closes the menu and starts the recording.
 To download and test the application, go to github.com/JudiJ/Application_RFT
 
 ## Program and Scripts
-“MyScenes” contains the “RFT.unity” file with the original scene in Unity that was adapted with SteamVR and custom-generated assets. 
+“MyScenes” contains the “RFT.unity” file. It opens the original scene that was adapted with SteamVR and custom-designed assets in Unity. 
 
 “MyScripts” contains the C#-code for the custom-created assets: 
 - “CanvasManager.cs” generates a black floating surface in front of the scene for assessing questionnaires between trials
@@ -26,11 +26,16 @@ To download and test the application, go to github.com/JudiJ/Application_RFT
 - “Menu.cs” generates a text bar to insert the participant number
 - “NotsoBright.mat” reduces the brightness of the rod and frame objects to minimize visual afterimages
 
-“SteamVR”, “SteamVR_Input” contain the generic code for prefabs, materials and action classes from the SteamVR Plugin (v2.3.2). 
+“SteamVR” contains editor, prefab folders, scripts, and materials from the SteamVR Plugin (v2.3.2).
+
+“SteamVR_Input” contains actions and action set classes from the SteamVR Plugin. 
+
 “TextMesh Pro” contains the TextMesh Pro! plugin (version 1.0.54, Bouchard 2016): text assets and materials.
 
 ### Supplementary
 Each file is complemented with a meta-file.
 
-The Unity game engine version is v2019.1.11f1. Steam VR Assets version 2.3.2 were used. Custom assets were created using Blender version 2.90. 
+The Unity game engine version is v2019.1.11f1. Steam VR Assets were used (version 2.3.2) and enhanced with custom-designed assets. The custom assets were created using Blender version 2.90. 
 The application was originally run with a Windows 10 (64 bit) computer, NVIDIA GeForce RTX 2070 GPU and Intel Core i7-9700K processor.
+
+Bouchard, S. (2016): TextMesh Pro! Advanced Text Rendering for Unity 3D. User Guide. Release 1.0.54
