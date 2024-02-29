@@ -1,18 +1,17 @@
 # Readme RFT_Project
 
-This project contains the programming scripts and assets for a virtual rod and frame test (RFT). 
+This project contains the source code and assets for a virtual rod and frame test (RFT). 
 It was developed for the 2023/24 study "In Rod we Trust. The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
 
 ## Description of the Application
-In a dark room, participants will see a rectangular frame and a cuboid rod with round dots at both ends. 
-At the start of each trial, the rod and frame are rotated around their z-axis (global Unity coordinates) in fixed degrees (frame 33, 0, and -33, rod 22, 11, -11, and -22). 
-The task for the virtual RFT is to orientate the rod to verticality, 0 degrees rotation, while ignoring the rotation of the frame. 
-To rotate the rod left and right, the participant can press the thumb on the left or right side on the controller trackpad. 
-When the input is confirmed, the next trial can be started by pulling the trigger at the back of the controller.
+In a dark room, participants will see a rectangular frame and a rod represented by two dots at the ends of an opaque cubiod. 
+At the start of each trial (40 trials in total), the rod and frame are rotated around their z-axis (global Unity z-coordinates) in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). 
+The task for the participant is to adjust the rotated rod to their subjective vertical, regardless of the frame's rotation. 
+To rotate the rod clockwise the rightside of the trackpad needs to be pressed, for counterclockwise rotation the left side. When the adjustiment of the rod is confirmed by pulling the trigger, which starts the next trial. 
 
 After opening the application, the menu shows a text bar to insert the participant number. 
 Pressing “Enter” on the numbpad closes the menu and starts the recording. 
-“Esc” resets the RFT to starting position, “0” resets to the black background start screen. By right clicking the mouse or closing the window with the cursor the application ends. Closing the application saves the recorded data automatically in a separate folder. 
+“Esc” resets the rod to starting position of the respecitve trial. By right clicking the mouse or closing the window with the cursor the application ends. Closing the application saves the recorded data automatically in a separate folder. 
 
 To download and test the application, go to github.com/JudiJ/Application_RFT
 
@@ -20,7 +19,7 @@ To download and test the application, go to github.com/JudiJ/Application_RFT
 “MyScenes” contains the “RFT.unity” file. It opens the original scene that was adapted with SteamVR and custom-designed assets in Unity. 
 
 “MyScripts” contains the C#-code for the custom-created assets: 
-- “CanvasManager.cs” generates a black floating surface in front of the scene for assessing questionnaires between trials
+- “CanvasManager.cs” generates a black floating surface in front of the scene for assessing questionnaires between trials (3 blocks)
 - “Frame.cs” generates a floating 3D object to be rotated in Euler angles
 - “Rod.cs” generates a floating 3D object to be rotated in Euler angles
 - “Menu.cs” generates a text bar to insert the participant number
