@@ -1,17 +1,19 @@
 # Readme RFT_Project
 
 This project contains the source code and assets for a virtual rod and frame test (RFT). 
-It was developed for the 2023/24 study "In Rod we Trust. The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
+It was developed for the 2023/24 study "In Rod we Trust - The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
+
+The files and information in this project are free to use provided the name of the author is cited (CC-BY).
 
 ## Description of the Application
-In a dark room, participants will see a rectangular frame and a rod represented by two dots at the ends of an opaque cubiod. 
+In a dark room, participants will see a rectangular frame and a rod represented by an opaque cubiod with two dots at the ends. 
 At the start of each trial (40 trials in total), the rod and frame are rotated around their z-axis (global Unity z-coordinates) in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). 
 The task for the participant is to adjust the rotated rod to their subjective vertical, regardless of the frame's rotation. 
-To rotate the rod clockwise the rightside of the trackpad needs to be pressed, for counterclockwise rotation the left side. When the adjustiment of the rod is confirmed by pulling the trigger, which starts the next trial. 
+To rotate the rod clockwise the right side of the trackpad needs to be pressed, for counterclockwise rotation the left side. When the adjustment of the rod is confirmed by pulling the trigger, the next trial starts. 
 
 After opening the application, the menu shows a text bar to insert the participant number. 
 Pressing “Enter” on the numbpad closes the menu and starts the recording. 
-“Esc” resets the rod to starting position of the respecitve trial. By right clicking the mouse or closing the window with the cursor the application ends. Closing the application saves the recorded data automatically in a separate folder. 
+“Esc” resets the rod to starting position of the respective trial. Right clicking the mouse or closing the window with the cursor ends the application. Closing the application saves the recorded data automatically in a separate folder. 
 
 To download and test the application, go to github.com/JudiJ/Application_RFT
 
@@ -34,7 +36,7 @@ To download and test the application, go to github.com/JudiJ/Application_RFT
 ### Supplementary
 Each file is complemented with a meta-file.
 
-The Unity game engine version is v2019.1.11f1. Steam VR Assets were used (version 2.3.2) and enhanced with custom-designed assets. The custom assets were created using Blender version 2.90. 
+The Unity game engine version is v2019.1.11f1. Steam VR Assets were employed (version 2.3.2) and enhanced with custom-designed assets created using Blender version 2.90. 
 The application was originally run with a Windows 10 (64 bit) computer, NVIDIA GeForce RTX 2070 GPU and Intel Core i7-9700K processor.
 
 Bouchard, S. (2016): TextMesh Pro! Advanced Text Rendering for Unity 3D. User Guide. Release 1.0.54
