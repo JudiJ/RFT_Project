@@ -3,8 +3,6 @@
 This project contains the source code and assets for a virtual rod and frame test (RFT). 
 It was developed for the 2023/24 study "In Rod we Trust - The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
 
-The files and information in this project are free to use provided the name of the author is cited (CC-BY).
-
 ## Description of the Application
 In a dark room, participants will see a rectangular frame and a rod represented by an opaque cubiod with two dots at the ends. 
 At the start of each trial (40 trials in total), the rod and frame are rotated around their z-axis (global Unity z-coordinates) in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). 
@@ -40,3 +38,14 @@ The Unity game engine version is v2019.1.11f1. Steam VR Assets were employed (ve
 The application was originally run with a Windows 10 (64 bit) computer, NVIDIA GeForce RTX 2070 GPU and Intel Core i7-9700K processor.
 
 Bouchard, S. (2016): TextMesh Pro! Advanced Text Rendering for Unity 3D. User Guide. Release 1.0.54
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
