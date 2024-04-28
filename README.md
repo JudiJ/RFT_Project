@@ -1,40 +1,51 @@
 # Readme RFT_Project
 
-This project contains the source code and assets for a virtual rod and frame test (RFT). 
+This project contains the programming scripts and assets for a VR rod and frame test (RFT). 
+
 It was developed for the 2023/24 study "In Rod we Trust - The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
 
-## Description of the Application
-In a dark room, participants will see a rectangular frame and a rod represented by an opaque cubiod with two dots at the ends. 
-At the start of each trial (40 trials in total), the rod and frame are rotated around their z-axis (global Unity z-coordinates) in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). 
-The task for the participant is to adjust the rotated rod to their subjective vertical, regardless of the frame's rotation. 
-To rotate the rod clockwise the right side of the trackpad needs to be pressed, for counterclockwise rotation the left side. When the adjustment of the rod is confirmed by pulling the trigger, the next trial starts. 
+To download and test the application, go to [Application_RFT](https://github.com/JudiJ/Application_RFT).
 
-After opening the application, the menu shows a text bar to insert the participant number. 
-Pressing “Enter” on the numbpad closes the menu and starts the recording. 
-“Esc” resets the rod to starting position of the respective trial. Right clicking the mouse or closing the window with the cursor ends the application. Closing the application saves the recorded data automatically in a separate folder. 
+Download the zip-file in this project to get the original Unity scene (v2019.1.11f1), the programming scripts for the custom created assets and the prefab assets used in the environment.
 
-To download and test the application, go to github.com/JudiJ/Application_RFT
+## The Application
+A virtual rectangular frame and rod, represented by an opaque cubiod with two white dots at both ends, are presented in a dark room. 
+At the start of each trial, the rod and frame are shown rotated around their z-axis in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). Using the controller, the rod can be orientated in clock- and counterclockwise direction. 
 
-## Program and Scripts
-“MyScenes” contains the “RFT.unity” file. It opens the original scene that was adapted with SteamVR and custom-designed assets in Unity. 
+### Functions
+- rotate the rod clockwise with the right side or counterclockwise with the left side of the controller trackpad
+- start next trial by pulling the trigger on the back of the controller
+- option to reset rod to starting position for each trial
+- record the VR experience
+- end the application by simply right-clicking the mouse or closing the window
+- save the data of each participant automatically after closing the application in separate folders
+- participant number can be inserted in a text bar in the menu before the start
 
-“MyScripts” contains the C#-code for the custom-created assets: 
+This VR environment is programmed for the HTC Vive controllers. While the application should work with different hardware, other devices may have limited functionality. Oculus devices do not have controller bindings, but should have full visuals.
+
+## Scene and Custom Scripts
+The “RFT.unity” file with the original Unity scene can be found in the folder [My Scenes](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scenes). 
+
+The C#-code for the custom-created assets can be found in the folder [My Scripts](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scripts). The custom scripts include: 
 - “CanvasManager.cs” generates a black floating surface in front of the scene for assessing questionnaires between trials (3 blocks)
 - “Frame.cs” generates a floating 3D object to be rotated in Euler angles
 - “Rod.cs” generates a floating 3D object to be rotated in Euler angles
 - “Menu.cs” generates a text bar to insert the participant number
 - “NotsoBright.mat” reduces the brightness of the rod and frame objects to minimize visual afterimages
 
-“SteamVR” contains editor, prefab folders, scripts, and materials from the SteamVR Plugin (v2.3.2).
-
-“SteamVR_Input” contains actions and action set classes from the SteamVR Plugin. 
-
-“TextMesh Pro” contains the TextMesh Pro! plugin (version 1.0.54, Bouchard 2016): text assets and materials.
+### Project Layout
+This project is organised in 5 folders:
+- "My Scenes" contains the Unity scene with the corresponding meta file.
+- "My Scripts" contains the programming scripts for the custom assets created with Blender (version 2.90)
+- “SteamVR” contains editor, prefab folders, scripts, and materials from the SteamVR Plugin (v2.3.2).
+- “SteamVR_Input” contains actions and action set classes from the SteamVR Plugin. 
+- “TextMesh Pro” contains the TextMesh Pro! plugin (version 1.0.54, Bouchard 2016): text assets and materials.
 
 ### Supplementary
 Each file is complemented with a meta-file.
 
-The Unity game engine version is v2019.1.11f1. Steam VR Assets were employed (version 2.3.2) and enhanced with custom-designed assets created using Blender version 2.90. 
+The scripts were programmed with the Unity game engine version v2019.1.11f1. Steam VR Assets (version 2.3.2) enhanced with custom-designed assets, created in Blender version 2.90. 
+
 The application was originally run with a Windows 10 (64 bit) computer, NVIDIA GeForce RTX 2070 GPU and Intel Core i7-9700K processor.
 
 Bouchard, S. (2016): TextMesh Pro! Advanced Text Rendering for Unity 3D. User Guide. Release 1.0.54
