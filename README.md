@@ -13,7 +13,7 @@ In a dark room a rectangular frame and a rod, represented by an opaque rectangle
 At the start of each trial, the rod and frame are shown rotated around their z-axis in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). Using the trackpad of the HCT Vive controller, the rod can be rotated in clock- or counterclockwise direction along the z-axis. 
 
 ### Functions
-- participant's code number can be inserted in a text bar in the menu before the start, data of each session will be logged automatically after confirmation of the participant's code (ENTER Numbpad)
+- participant's code can be inserted in a text bar in the menu before the start, data of each session will be logged automatically after confirmation (ENTER Numpad)
 - the the system time ("yy/MM/dd HH:mm:ss:fffff"), the trial number, the event of pulling the trigger (unequal to the trial number in cases in which resetting a trial is necessary), z-rotational axis of the frame and the rod                global Unity coordinates, the input on the x- and y-axis of the controller, the position and rotation of the virtual camera in global Unity coordinates will be logged
 - rotate the rod clockwise by pressing the right side or counterclockwise by pressing the left side of the HTC Vive controller trackpad
 - start the next trial by pulling the trigger of the HTC Vive controller
