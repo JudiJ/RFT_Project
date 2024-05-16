@@ -6,18 +6,18 @@ It was developed for the 2023/24 study "In Rod we Trust - The evaluation of virt
 
 To download and test the built application, go to [Application_RFT](https://github.com/JudiJ/Application_RFT).
 
-Download the zip-folder to get the original Unity scene (Requries v2019.1.11f1), the corresonding scripts and the prefabs used for the VR application.
+Download the zip folder to get the original Unity scene (Requires v2019.1.11f1), the corresponding scripts, and the prefabs used for the VR application.
 
 ## The Application
-In a dark room a rectangular frame and a rod, represented by an opaque rectangle, with two spheres as child objects attached to both ends, are presented
-At the start of each trial, the rod and frame are shown rotated around their z-axis in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). Using the trackpad of the HCT Vive controller, the rod can be rotated in clock- and counterclockwise direction along the z-axis. 
+In a dark room a rectangular frame and a rod, represented by an opaque rectangle with two spheres as child objects attached to both ends, are presented.
+At the start of each trial, the rod and frame are shown rotated around their z-axis in fixed degrees (frame +/-33 or 0, and rod +/-22 or +/-11). Using the trackpad of the HCT Vive controller, the rod can be rotated in clock- or counterclockwise direction along the z-axis. 
 
 ### Functions
-- participant's code number can be inserted in a text bar in the menu before the start, data of each session will be logged automatically after confrimation of the participants code (ENTER Numbpad)
-- the the system-time ("yy/MM/dd HH:mm:ss:fffff"), the trial number, the event of pulling the trigger (unequal to the trial number in cases in which resetting a trial is necessary), z-rotational axis of the frame and the rod                global Unity coordinates, the input on the x- and y-axis of the controller, the position and rotation of the virtual camera in global Unity coordinates will be logged
+- participant's code number can be inserted in a text bar in the menu before the start, data of each session will be logged automatically after confirmation of the participant's code (ENTER Numbpad)
+- the the system time ("yy/MM/dd HH:mm:ss:fffff"), the trial number, the event of pulling the trigger (unequal to the trial number in cases in which resetting a trial is necessary), z-rotational axis of the frame and the rod                global Unity coordinates, the input on the x- and y-axis of the controller, the position and rotation of the virtual camera in global Unity coordinates will be logged
 - rotate the rod clockwise by pressing the right side or counterclockwise by pressing the left side of the HTC Vive controller trackpad
-- start next trial by pulling the trigger of the HTC Vive controller
-- option to reset rod to the starting position for each trial
+- start the next trial by pulling the trigger of the HTC Vive controller
+- option to reset each trial
 
 Key bindings are programmed for HTC Vive controllers. Ensure compatibility with other devices, check the key bindings in Steam VR. 
 
@@ -27,15 +27,15 @@ The “RFT.unity” scene is the original Unity scene in the folder [My Scenes](
 The C#-code can be found in the folder [My Scripts](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scripts). 
 The custom scripts include: 
 - “CanvasManager.cs” disables the input field after a button click
-- “Rod.cs”  contains the rationale for rotating the Rod each trial and the  respective reset fuction
-- “Frame.cs” contains the rationale for rotating the Frame each trial and the respective reset fuction
-- “Menu.cs” enables the constelation switches between every trial, the diplayes the grey plane for the 3 blocks, and starts the main scene (enter on the Numbpad) 
-- “Output.cs” contains the looging routine and works in Editor as well as in the built application (adjust the path according to your own needs)
+- “Rod.cs”  contains the rationale for rotating the Rod each trial and the  respective reset function
+- “Frame.cs” contains the rationale for rotating the Frame each trial and the respective reset function
+- “Menu.cs” enables the constellation switches between every trial, the diplayes the grey plane for the 3 blocks, and starts the main scene (enter on the Numpad) 
+- “Output.cs” contains the logging routine and works in Editor as well as in the built application (adjust the path according to your own needs)
 Additionally custom material is included: 
-- “NotsoBright.mat” is a dim light version of white and the custom material used for Rod and Frame objects to minimize the likelyhood of afterimages
+- “NotsoBright.mat” is a dim light version of white and the custom material used for Rod and Frame objects to minimize the likelihood of afterimages
 
 ### Project Layout
-This project is organised in 5 folders:
+This project is organized into 5 folders:
 - "My Scenes" contains the RFT scene with the corresponding meta files
 - "My Scripts" contains the scripts and the custom material
 - “SteamVR” assests from the SteamVR Plugin (v2.3.2).
@@ -44,7 +44,7 @@ This project is organised in 5 folders:
 
 ### Supplementary
 Each file is complemented with the respective meta-file.
-Unity game engine version v2019.1.11f1. is requried to open the scene in the editor
+Unity game engine version v2019.1.11f1. is required to open the scene in the editor
 
 The application was originally run with a Windows 10 (64 bit) computer, NVIDIA GeForce RTX 2070 GPU and Intel Core i7-9700K processor.
 
