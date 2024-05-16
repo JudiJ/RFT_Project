@@ -25,12 +25,14 @@ Key bindings are programmed for HTC Vive controllers. Ensure compatibility with 
 The “RFT.unity” scene is the original Unity scene in the folder [My Scenes](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scenes). 
 
 The C#-code can be found in the folder [My Scripts](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scripts). 
+
 The custom scripts include: 
 - “CanvasManager.cs” disables the input field after a button click
 - “Rod.cs”  contains the rationale for rotating the Rod each trial and the  respective reset function
 - “Frame.cs” contains the rationale for rotating the Frame each trial and the respective reset function
 - “Menu.cs” enables the constellation switches between every trial, the diplayes the grey plane for the 3 blocks, and starts the main scene (enter on the Numpad) 
 - “Output.cs” contains the logging routine and works in Editor as well as in the built application (adjust the path according to your own needs)
+
 Additionally custom material is included: 
 - “NotsoBright.mat” is a dim light version of white and the custom material used for Rod and Frame objects to minimize the likelihood of afterimages
 
