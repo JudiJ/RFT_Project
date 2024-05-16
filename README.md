@@ -4,7 +4,7 @@ This project contains the programming scripts and assets for the virtual Rod and
 
 It was developed for the 2023/24 study "In Rod we Trust - The evaluation of virtual Rod and Frame Test as a cybersickness screening instrument" by J. Josupeit.
 
-To download and test the built application, go to [Application_RFT](https://github.com/JudiJ/Application_RFT).
+To download and test the built application, go to [App_RFT](https://github.com/JudiJ/App_RFT).
 
 Download the zip folder to get the original Unity scene (Requires v2019.1.11f1), the corresponding scripts, and the prefabs used for the VR application.
 
