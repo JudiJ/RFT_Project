@@ -28,7 +28,7 @@ At the start of each trial, the rod and frame are shown rotated around their z-a
 Key bindings are programmed for HTC Vive controllers. To ensure compatibility with other devices, check the key bindings in Steam VR. 
 
 ## Scene and Custom Scripts
-The “RFT.unity” file with the original Unity scene can be found in the folder [My Scenes](https://github.com/JudiJ/RFT_Project/tree/main/My%20Scenes). 
+The “RFT.unity” file with the original Unity scene can be found in the folder [My Scenes](https://github.com/JudiJ/RFT_Project/tree/main/Assets/My%20Scenes). 
 
 The C#-code can be found in the folder [My Scripts](https://github.com/JudiJ/RFT_Project/tree/main/Assets/My%20Scripts). 
 
